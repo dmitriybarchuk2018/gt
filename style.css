@@ -9,6 +9,19 @@ p {
     padding: 0;
 }
 
+p, img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
 body {
     background: #F9F9F9;
     font-family: 'Raleway', sans-serif;
