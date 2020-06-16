@@ -65,7 +65,7 @@ body {
 }
 
 .wrapper-socialButtons button {
-    background-color: #7289DA;
+    background-color: #23272A;
     outline: none;
     border: none;
     border-radius: 5px;
@@ -75,12 +75,12 @@ body {
 
 .wrapper-socialButtons button:hover {
     transition: 0.3s;
-    background-color: #3f56a8;
+    background-color: #4B5257;
     cursor: pointer;
 }
 
 .wrapper-socialButtons button:active {
-    background-color: #7289DA;
+    background-color: #23272A;
 } 
 
 
