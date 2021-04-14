@@ -24,10 +24,36 @@
         <div class="wrapper-description">
             <p>В нашем Discord канале вы можете оказать влияние на становление проекта, предложив свои идеи и поучаствовать в тестировании. На релизе вас ждет RolePlay проект, дающий возможность отыграть персонажа, который окажет влияние на свое окружение, город, регион или на весь штат. Продажные законники, отсутствие рабочих мест, грязная политика, растущая преступность в штате. Как вы поняли - действия игроков будут иметь сильное влияние на политику штата и обстановку в нём самом.</p>
         </div>
+        <div style="font-size: 18px; opacity: .7; font-weight: bold">
+            Авторизируйтесь на пректе с помощью Discord
+        </div>
         <div class="wrapper-socialButtons">
-            <button onclick="window.open('https://ghostown.team/discord')" type="button"><img src="./src/discordButton.svg" alt=""></button>
+            <button class="discordAuth" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=745783116295176293&redirect_uri=http%3A%2F%2Flocalhost%3A3001%2Fauthorization&response_type=code&scope=identify%20guilds%20guilds.join', '_self')" type="button">
+                <img src="./src/redmAuthWithDiscord-icon.svg" alt="">
+            </button>
+            <button disabled class="discordAuth" type="button">
+                <img src="./src/fivemAuthWithDiscord-icon.svg" alt="">
+            </button>
+        </div>
+        <div style="line-height: 11px; font-size: 12px; opacity: 0.7; font-weight: bold; color: crimson; text-transform: uppercase">В разработке</div>
+        <div class="footer">
+            <div class="recommendations">
+                <img src="./src/recom/rockstar-icon.svg" alt="">
+                <img src="./src/recom/intellij-icon.svg" alt="">
+                <img src="./src/recom/fivem-icon.svg" alt="">
+                <img src="./src/recom/redm-icon.svg" alt="">
+            </div>
+            <button class="discord" onclick="window.open('https://ghostown.team/discord')" type="button">
+                <img src="./src/discordButton.svg" alt="">
+            </button>
+            <div class="copy" id="copy"></div>
         </div>
         <br>
     </div>
 </body>
+<script type="text/javascript">
+  const d = new Date()
+  const copyElem = document.getElementById('copy')
+  copyElem.innerText = `© 2020 - ${d.getFullYear()} Ghostown Team`
+</script>
 </html>
